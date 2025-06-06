@@ -22,6 +22,14 @@ Below is a list of the example files and the Clojure features they illustrate:
     *   **Feature**: Macros
     *   **Description**: Shows Clojure's powerful macro system. Macros are functions that run at compile-time, transforming code itself (which is possible because Clojure is homoiconic - its code is represented as data structures). This allows for powerful syntactic abstractions and domain-specific language creation.
 
+5.  **`atom_example.clj`**:
+    *   **Feature**: Atoms
+    *   **Description**: Demonstrates Clojure `atom`s for managing shared, synchronous, uncoordinated, and atomic state. Atoms are ideal for independent, atomic updates to a single piece of state.
+
+6.  **`future_example.clj`**:
+    *   **Feature**: Futures
+    *   **Description**: Shows how Clojure `future`s can be used to execute computations in parallel in a separate thread. This allows the main thread to continue its work and retrieve the result of the computation later, potentially improving performance for long-running tasks.
+
 ## Running the Examples
 
 To run these examples, you need to have Clojure installed. You can find installation instructions on the [official Clojure website](https://clojure.org/guides/getting_started).
@@ -44,6 +52,8 @@ Once Clojure is installed, you can run each example file from your terminal usin
     clj -M stm_example.clj
     clj -M agent_example.clj
     clj -M macro_example.clj
+    clj -M atom_example.clj
+    clj -M future_example.clj
     ```
 
 Each script will print output to the console demonstrating the concepts. Review the comments within each file for more detailed explanations of the code.
